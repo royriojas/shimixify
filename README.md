@@ -47,7 +47,7 @@ var deps = {
   self: 'global.self'
 };
 
-var shimify = require( 'build-workflow/utils/shimify' ).configure( deps );
+var shimify = require( 'shimify' ).configure( deps );
 
 var b = browserify();
 b.add('./my-module');
