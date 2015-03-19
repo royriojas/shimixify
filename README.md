@@ -70,3 +70,6 @@ var mockWindow = require('mockWindow');
 // no more globals and your code is not easier to test!
 var myModule = proxyquire('./my-module', { window: mockWindow });
 ```
+
+## [Changelog](./changelog.md)
+

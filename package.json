@@ -10,6 +10,7 @@
     "test": "mocha-runner 'specs/**/*.js'",
     "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
     "lint": "npm run beautify && npm run eslint",
+    "changelog": "changelogx -f markdown -o ./changelog.md",
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' npm run cover",
     "prepush": "npm run beautify-check && npm run eslint && npm test"
   },
