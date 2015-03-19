@@ -1,7 +1,7 @@
 {
   "name": "shimixify",
-  "version": "1.0.1",
-  "description": "Simple wrapper around esformatter to beautify javascript files overriding the content of the files",
+  "version": "1.0.2",
+  "description": "browserify transform to replace require calls to custom browser globals",
   "main": "index.js",
   "scripts": {
     "beautify": "esbeautifier index.js 'src/**/*.js' 'specs/**/*.js'",
@@ -9,6 +9,7 @@
     "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' index.js specs/ -c './configs/eslint.json'",
     "test": "mocha-runner 'specs/**/*.js'",
     "cover": "istanbul cover -x 'specs/**/*.js' mocha-runner 'specs/**/*.js' html text-summary",
+    "lint": "npm run beautify && npm run eslint",
     "watch": "npm run cover && watch-spawn -p 'specs/**/*.js' -p 'index.js' npm run cover",
     "prepush": "npm run beautify-check && npm run eslint && npm test"
   },
@@ -22,6 +23,8 @@
     "npm run prepush"
   ],
   "devDependencies": {
+    "changelogx": "^1.0.5",
+    "esbeautifier": "^2.0.3",
     "eslint": "^0.16.1",
     "eslint-friendly-formatter": "^1.0.3",
     "istanbul": "^0.3.7",
@@ -43,5 +46,12 @@
     "browserify transform",
     "browserify",
     "replace calls to require"
-  ]
+  ],
+  "changelogx": {
+    "issueIDRegExp": "#(\\d+)",
+    "commitURL": "https://github.com/royriojas/shimixify/commit/{0}",
+    "authorURL": "https://github.com/{0}",
+    "issueIDURL": "https://github.com/royriojas/shimixify/issues/{0}",
+    "projectName": "shimixify"
+  }
 }
