@@ -50,6 +50,11 @@
     "replace calls to require"
   ],
   "changelogx": {
+    "ignoreRegExp": [
+      "BLD: Release",
+      "DOC: Generate Changelog",
+      "Generated Changelog"
+    ],
     "issueIDRegExp": "#(\\d+)",
     "commitURL": "https://github.com/royriojas/shimixify/commit/{0}",
     "authorURL": "https://github.com/{0}",
