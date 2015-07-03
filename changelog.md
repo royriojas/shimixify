@@ -1,5 +1,17 @@
 
 # shimixify - Changelog
+## v1.1.1
+- **Build Scripts Changes**
+  - Release v1.1.1 - [3f0ca50]( https://github.com/royriojas/shimixify/commit/3f0ca50 ), [royriojas](https://github.com/royriojas), 03/07/2015 00:17:54
+
+    
+- **Documentation**
+  - make the code block in the Readme rendered as Javascript - [02e768a]( https://github.com/royriojas/shimixify/commit/02e768a ), [royriojas](https://github.com/royriojas), 03/07/2015 00:17:39
+
+    
+  - Generate changelog - [2e775c5]( https://github.com/royriojas/shimixify/commit/2e775c5 ), [royriojas](https://github.com/royriojas), 03/07/2015 00:13:59
+
+    
 ## v1.1.0
 - **Build Scripts Changes**
   - Release v1.1.0 - [92ab8ff]( https://github.com/royriojas/shimixify/commit/92ab8ff ), [royriojas](https://github.com/royriojas), 03/07/2015 00:13:41
