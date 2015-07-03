@@ -29,7 +29,7 @@ npm i --save-dev shimixify
 
 ## Usage
 
-```
+```javascript
 
 // this is the hash of shims that will be matched against the
 // calls to require. For example calling
