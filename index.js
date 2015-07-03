@@ -9,12 +9,13 @@ var options = {
 };
 
 module.exports = transformTools.makeRequireTransform( 'requireTransform', options, function ( args, opts, cb ) {
-  var configData = opts.configData || {};
-  var config = configData.config || {};
+  var configData = opts.configData || { };
+  var config = configData.config || { };
+  var shims = config.shims || { };
 
   var key = args[ 0 ];
 
-  var foundDep = config[ key ];
+  var foundDep = shims[ key ];
 
   if ( foundDep ) {
     return cb( null, sFormat( '({0})', foundDep ) );

@@ -8,12 +8,14 @@ describe( 'shimixify', function () {
     var dummyJsFile = path.resolve( __dirname, '../testFixtures/testWithConfig/dummy.js' );
 
     var content = 'var win = require("window"); var doc = require("document");';
-    var deps = {
+    var shims = {
       'window': 'global.window',
       'document': 'global.document'
     };
 
-    transformTools.runTransform( shimify.configure( deps ), dummyJsFile, {
+    var opts = { shims: shims };
+
+    transformTools.runTransform( shimify.configure( opts ), dummyJsFile, {
       content: content
     }, function ( err, transformed ) {
       if ( !err ) {
