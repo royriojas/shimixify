@@ -1,9 +1,13 @@
-var sFormat = require( 'stringformat' );
 var transformTools = require( 'browserify-transform-tools' );
 
 var options = {
   excludeExtensions: [
     '.json'
+  ],
+  includeExtensions: [
+    '.jsx',
+    '.js',
+    '.es6'
   ],
   evaluateArguments: true
 };
@@ -18,7 +22,7 @@ module.exports = transformTools.makeRequireTransform( 'requireTransform', option
   var foundDep = shims[ key ];
 
   if ( foundDep ) {
-    return cb( null, sFormat( '({0})', foundDep ) );
+    return cb( null, '(' + foundDep + ')' );
   }
 
   cb();
