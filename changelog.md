@@ -1,5 +1,10 @@
 
 # shimixify - Changelog
+## v1.1.3
+- **Build Scripts Changes**
+  - Update browserify-transform-tools and removed old unused code - [0e741a8]( https://github.com/royriojas/shimixify/commit/0e741a8 ), [royriojas](https://github.com/royriojas), 17/07/2015 18:15:03
+
+    
 ## v1.1.1
 - **Documentation**
   - make the code block in the Readme rendered as Javascript - [02e768a]( https://github.com/royriojas/shimixify/commit/02e768a ), [royriojas](https://github.com/royriojas), 03/07/2015 00:17:39
