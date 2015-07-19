@@ -1,6 +1,6 @@
 
 # shimixify - Changelog
-## HEAD
+## v1.1.5
 - **Bug Fixes**
   - remove exclude extensions in favor of include extensions - [4d107d2]( https://github.com/royriojas/shimixify/commit/4d107d2 ), [royriojas](https://github.com/royriojas), 19/07/2015 06:29:23
 
