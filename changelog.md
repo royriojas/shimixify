@@ -1,5 +1,10 @@
 
 # shimixify - Changelog
+## v1.1.4
+- **Features**
+  - Add option to exclude certain files from the transformation - [b63d21b]( https://github.com/royriojas/shimixify/commit/b63d21b ), [royriojas](https://github.com/royriojas), 19/07/2015 02:47:28
+
+    
 ## v1.1.3
 - **Build Scripts Changes**
   - Update browserify-transform-tools and removed old unused code - [0e741a8]( https://github.com/royriojas/shimixify/commit/0e741a8 ), [royriojas](https://github.com/royriojas), 17/07/2015 18:15:03
