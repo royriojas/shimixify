@@ -1,5 +1,10 @@
 
 # shimixify - Changelog
+## HEAD
+- **Bug Fixes**
+  - remove exclude extensions in favor of include extensions - [4d107d2]( https://github.com/royriojas/shimixify/commit/4d107d2 ), [royriojas](https://github.com/royriojas), 19/07/2015 06:29:23
+
+    
 ## v1.1.4
 - **Features**
   - Add option to exclude certain files from the transformation - [b63d21b]( https://github.com/royriojas/shimixify/commit/b63d21b ), [royriojas](https://github.com/royriojas), 19/07/2015 02:47:28
