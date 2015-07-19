@@ -1,4 +1,5 @@
 var transformTools = require( 'browserify-transform-tools' );
+var transformExclude = require( 'browserify-transform-tools-exclude' );
 
 var options = {
   excludeExtensions: [
@@ -12,7 +13,7 @@ var options = {
   evaluateArguments: true
 };
 
-module.exports = transformTools.makeRequireTransform( 'requireTransform', options, function ( args, opts, cb ) {
+var fnTransform = transformExclude( function ( args, opts, cb ) {
   var configData = opts.configData || { };
   var config = configData.config || { };
   var shims = config.shims || { };
@@ -22,8 +23,12 @@ module.exports = transformTools.makeRequireTransform( 'requireTransform', option
   var foundDep = shims[ key ];
 
   if ( foundDep ) {
-    return cb( null, '(' + foundDep + ')' );
+    cb( null, '(' + foundDep + ')' );
+    return;
   }
 
   cb();
 } );
+
+
+module.exports = transformTools.makeRequireTransform( 'shimixify', options, fnTransform );
